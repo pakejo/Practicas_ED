@@ -1,0 +1,139 @@
+\hypertarget{classGuia__Tlf_1_1iterator}{}\section{Referencia de la Clase Guia\+\_\+\+Tlf\+:\+:iterator}
+\label{classGuia__Tlf_1_1iterator}\index{Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}}
+
+
+clase para iterar sobre la guia  
+
+
+
+
+{\ttfamily \#include $<$guiatlf.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classGuia__Tlf_1_1iterator}{iterator} \& \hyperlink{classGuia__Tlf_1_1iterator_ac23d53e2211c9e379d910b4ca6354a1c}{operator=} (const \hyperlink{classGuia__Tlf_1_1iterator}{iterator} \&it)
+\begin{DoxyCompactList}\small\item\em Operador de asignacion. \end{DoxyCompactList}\item 
+\hyperlink{classGuia__Tlf_1_1iterator}{iterator} \& \hyperlink{classGuia__Tlf_1_1iterator_a4edb22003e51ce05bb2be0e0f0f9334d}{operator++} ()
+\begin{DoxyCompactList}\small\item\em Sobrecarga del oeprador ++. \end{DoxyCompactList}\item 
+\hyperlink{classGuia__Tlf_1_1iterator}{iterator} \& \hyperlink{classGuia__Tlf_1_1iterator_a40654c62e5d7fa0c88f41cc8248cba44}{operator-\/-\/} ()
+\begin{DoxyCompactList}\small\item\em Sobrecarga operador --. \end{DoxyCompactList}\item 
+pair$<$ const string, string $>$ \& \hyperlink{classGuia__Tlf_1_1iterator_a677ada958ed6f7f65c29f2d12b6e35b6}{operator$\ast$} ()
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador $\ast$. \end{DoxyCompactList}\item 
+bool \hyperlink{classGuia__Tlf_1_1iterator_ab4b046aff7151ba197b789091b65aa49}{operator==} (const \hyperlink{classGuia__Tlf_1_1iterator}{iterator} \&i)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador ==. \end{DoxyCompactList}\item 
+bool \hyperlink{classGuia__Tlf_1_1iterator_aa7f7981ca6aec075d47618b136904682}{operator!=} (const \hyperlink{classGuia__Tlf_1_1iterator}{iterator} \&i)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador !=. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Amigas}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGuia__Tlf_1_1iterator_a4349d7a1b26a0aa94447235f95b2f940}\label{classGuia__Tlf_1_1iterator_a4349d7a1b26a0aa94447235f95b2f940}} 
+class {\bfseries Guia\+\_\+\+Tlf}
+\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+clase para iterar sobre la guia 
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classGuia__Tlf_1_1iterator_aa7f7981ca6aec075d47618b136904682}\label{classGuia__Tlf_1_1iterator_aa7f7981ca6aec075d47618b136904682}} 
+\index{Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}!operator"!=@{operator"!=}}
+\index{operator"!=@{operator"!=}!Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}}
+\subsubsection{\texorpdfstring{operator"!=()}{operator!=()}}
+{\footnotesize\ttfamily bool Guia\+\_\+\+Tlf\+::iterator\+::operator!= (\begin{DoxyParamCaption}\item[{const \hyperlink{classGuia__Tlf_1_1iterator}{iterator} \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador !=. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & iterador a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si el contenido del iterador es distinto al de i. False en caso contrario 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGuia__Tlf_1_1iterator_a677ada958ed6f7f65c29f2d12b6e35b6}\label{classGuia__Tlf_1_1iterator_a677ada958ed6f7f65c29f2d12b6e35b6}} 
+\index{Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}}
+\subsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily pair$<$const string, string$>$\& Guia\+\_\+\+Tlf\+::iterator\+::operator$\ast$ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador $\ast$. 
+
+\begin{DoxyReturn}{Devuelve}
+pareja de strings. El primer elemento es el usuario. El segundo elemento es el número de teléfono 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGuia__Tlf_1_1iterator_a4edb22003e51ce05bb2be0e0f0f9334d}\label{classGuia__Tlf_1_1iterator_a4edb22003e51ce05bb2be0e0f0f9334d}} 
+\index{Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}}
+\subsubsection{\texorpdfstring{operator++()}{operator++()}}
+{\footnotesize\ttfamily \hyperlink{classGuia__Tlf_1_1iterator}{iterator}\& Guia\+\_\+\+Tlf\+::iterator\+::operator++ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del oeprador ++. 
+
+\begin{DoxyReturn}{Devuelve}
+Iterador al siguiente objeto 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGuia__Tlf_1_1iterator_a40654c62e5d7fa0c88f41cc8248cba44}\label{classGuia__Tlf_1_1iterator_a40654c62e5d7fa0c88f41cc8248cba44}} 
+\index{Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}!operator-\/-\/@{operator-\/-\/}}
+\index{operator-\/-\/@{operator-\/-\/}!Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}}
+\subsubsection{\texorpdfstring{operator-\/-\/()}{operator--()}}
+{\footnotesize\ttfamily \hyperlink{classGuia__Tlf_1_1iterator}{iterator}\& Guia\+\_\+\+Tlf\+::iterator\+::operator-\/-\/ (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga operador --. 
+
+\begin{DoxyReturn}{Devuelve}
+Iterador al anterior objeto a iterar 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGuia__Tlf_1_1iterator_ac23d53e2211c9e379d910b4ca6354a1c}\label{classGuia__Tlf_1_1iterator_ac23d53e2211c9e379d910b4ca6354a1c}} 
+\index{Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}!operator=@{operator=}}
+\index{operator=@{operator=}!Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily \hyperlink{classGuia__Tlf_1_1iterator}{iterator}\& Guia\+\_\+\+Tlf\+::iterator\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classGuia__Tlf_1_1iterator}{iterator} \&}]{it }\end{DoxyParamCaption})}
+
+
+
+Operador de asignacion. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em it} & iterador a copiar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+referencia al objeto con el contenido de it 
+\end{DoxyReturn}
+\begin{DoxyPostcond}{Postcondición}
+El iterador queda modificado 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classGuia__Tlf_1_1iterator_ab4b046aff7151ba197b789091b65aa49}\label{classGuia__Tlf_1_1iterator_ab4b046aff7151ba197b789091b65aa49}} 
+\index{Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}!operator==@{operator==}}
+\index{operator==@{operator==}!Guia\+\_\+\+Tlf\+::iterator@{Guia\+\_\+\+Tlf\+::iterator}}
+\subsubsection{\texorpdfstring{operator==()}{operator==()}}
+{\footnotesize\ttfamily bool Guia\+\_\+\+Tlf\+::iterator\+::operator== (\begin{DoxyParamCaption}\item[{const \hyperlink{classGuia__Tlf_1_1iterator}{iterator} \&}]{i }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador ==. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & iterador a comparar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+True si el contenido del iterador es igual al de i. False en caso contrario 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir del siguiente fichero\+:\begin{DoxyCompactItemize}
+\item 
+include/\hyperlink{guiatlf_8h}{guiatlf.\+h}\end{DoxyCompactItemize}

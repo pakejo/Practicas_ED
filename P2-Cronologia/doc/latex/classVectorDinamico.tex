@@ -1,0 +1,182 @@
+\hypertarget{classVectorDinamico}{}\section{Referencia de la plantilla de la Clase Vector\+Dinamico$<$ T $>$}
+\label{classVectorDinamico}\index{Vector\+Dinamico$<$ T $>$@{Vector\+Dinamico$<$ T $>$}}
+
+
+T.\+D.\+A. \hyperlink{classVectorDinamico}{Vector\+Dinamico}.  
+
+
+
+
+{\ttfamily \#include $<$vector\+\_\+dinamico.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classVectorDinamico_ad1d9b40e76d3ac449e99da4290e08924}{Vector\+Dinamico} (int n=0)
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classVectorDinamico_a32117d987800176b81b5b288a15fa80e}\label{classVectorDinamico_a32117d987800176b81b5b288a15fa80e}} 
+{\bfseries Vector\+Dinamico} (const \hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$ \&original)
+\item 
+int \hyperlink{classVectorDinamico_a170abdfac52375020f44bc3903f23b65}{size} () const
+\begin{DoxyCompactList}\small\item\em Número de componentes del vector. \end{DoxyCompactList}\item 
+T \& \hyperlink{classVectorDinamico_a6c4cab2d396b71939c056fb40ba72951}{operator\mbox{[}$\,$\mbox{]}} (int i)
+\begin{DoxyCompactList}\small\item\em Acceso a un elemento. \end{DoxyCompactList}\item 
+const T \& \hyperlink{classVectorDinamico_ad078d3fb05f126632fd8fe995fae2a74}{operator\mbox{[}$\,$\mbox{]}} (int i) const
+\begin{DoxyCompactList}\small\item\em Acceso a un elemento de un vector constante. \end{DoxyCompactList}\item 
+void \hyperlink{classVectorDinamico_a9b3fd8907bc3ca9b5bc5775bbb11f867}{resize} (int n)
+\begin{DoxyCompactList}\small\item\em Redimensión del vector. \end{DoxyCompactList}\item 
+void \hyperlink{classVectorDinamico_a2680351f2cd4feba8825c6f1f04a6392}{push\+\_\+back} (T \&s)
+\begin{DoxyCompactList}\small\item\em Añade un elemento al final del vector. \end{DoxyCompactList}\item 
+\hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$ \& \hyperlink{classVectorDinamico_a94727e698cadc2cf3e8482ce9620df87}{operator=} (const \hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$ \&original)
+\begin{DoxyCompactList}\small\item\em Sobrecarga del operador de asignacion. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class T$>$\newline
+class Vector\+Dinamico$<$ T $>$}
+
+T.\+D.\+A. \hyperlink{classVectorDinamico}{Vector\+Dinamico}. 
+
+Una instancia {\itshape v} del tipo de datos abstracto {\ttfamily \hyperlink{classVectorDinamico}{Vector\+Dinamico}} sobre el tipo {\ttfamily T} es un array 1-\/dimensional de un determinado tamaño {\itshape n}, que puede crecer y decrecer a petici�n del usuario. Lo podemos representar como
+
+\{v\mbox{[}0\mbox{]},v\mbox{[}1\mbox{]},...,v\mbox{[}n-\/1\mbox{]}\}
+
+donde v\mbox{[}i\mbox{]} es el valor almacenado en la posición i del vector
+
+La eficiencia en espacio es {\itshape O(n)}. 
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classVectorDinamico_ad1d9b40e76d3ac449e99da4290e08924}\label{classVectorDinamico_ad1d9b40e76d3ac449e99da4290e08924}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!Vector\+Dinamico@{Vector\+Dinamico}}
+\index{Vector\+Dinamico@{Vector\+Dinamico}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{Vector\+Dinamico()}{VectorDinamico()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$\+::\hyperlink{classVectorDinamico}{Vector\+Dinamico} (\begin{DoxyParamCaption}\item[{int}]{n = {\ttfamily 0} }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & indica el número de componentes inicial reservados para el vector \\
+\hline
+\end{DoxyParams}
+\begin{DoxyNote}{Nota}
+Este constructor también corresponde al de por defecto 
+\end{DoxyNote}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classVectorDinamico_a94727e698cadc2cf3e8482ce9620df87}\label{classVectorDinamico_a94727e698cadc2cf3e8482ce9620df87}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!operator=@{operator=}}
+\index{operator=@{operator=}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+\hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$ \& \hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$ \&}]{original }\end{DoxyParamCaption})}
+
+
+
+Sobrecarga del operador de asignacion. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em original} & Vector desde el que se quiere copiar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVectorDinamico_a6c4cab2d396b71939c056fb40ba72951}\label{classVectorDinamico_a6c4cab2d396b71939c056fb40ba72951}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+T \& \hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Acceso a un elemento. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & la posición del vector donde está el componente. 0$<$=i$<$\hyperlink{classVectorDinamico_a170abdfac52375020f44bc3903f23b65}{size()} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La referencia al elemento. Por tanto, se puede usar para almacenar un valor en esa posición. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVectorDinamico_ad078d3fb05f126632fd8fe995fae2a74}\label{classVectorDinamico_ad078d3fb05f126632fd8fe995fae2a74}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!operator\mbox{[}\mbox{]}@{operator[]}}
+\index{operator\mbox{[}\mbox{]}@{operator[]}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{operator[]()}{operator[]()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const T \& \hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$\+::operator\mbox{[}$\,$\mbox{]} (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption}) const}
+
+
+
+Acceso a un elemento de un vector constante. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em i} & la posición del vector donde está el componente. 0$<$=i$<$\hyperlink{classVectorDinamico_a170abdfac52375020f44bc3903f23b65}{size()} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Devuelve}
+La referencia al elemento. Se supone que el vector no se puede modificar y por tanto es acceso de sólo lectura 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classVectorDinamico_a2680351f2cd4feba8825c6f1f04a6392}\label{classVectorDinamico_a2680351f2cd4feba8825c6f1f04a6392}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!push\+\_\+back@{push\+\_\+back}}
+\index{push\+\_\+back@{push\+\_\+back}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{push\+\_\+back()}{push\_back()}}
+{\footnotesize\ttfamily template$<$class T$>$ \\
+void \hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$\+::push\+\_\+back (\begin{DoxyParamCaption}\item[{T \&}]{s }\end{DoxyParamCaption})}
+
+
+
+Añade un elemento al final del vector. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em s} & El nuevo valor a añadir \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classVectorDinamico_a9b3fd8907bc3ca9b5bc5775bbb11f867}\label{classVectorDinamico_a9b3fd8907bc3ca9b5bc5775bbb11f867}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!resize@{resize}}
+\index{resize@{resize}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{resize()}{resize()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$\+::resize (\begin{DoxyParamCaption}\item[{int}]{n }\end{DoxyParamCaption})}
+
+
+
+Redimensión del vector. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em n} & El nuevo tamaño del vector. n$>$=0 \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+Los valores almacenados antes de la redimensión no se pierden (excepto los que se salen del nuevo rango de índices) 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classVectorDinamico_a170abdfac52375020f44bc3903f23b65}\label{classVectorDinamico_a170abdfac52375020f44bc3903f23b65}} 
+\index{Vector\+Dinamico@{Vector\+Dinamico}!size@{size}}
+\index{size@{size}!Vector\+Dinamico@{Vector\+Dinamico}}
+\subsubsection{\texorpdfstring{size()}{size()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+int \hyperlink{classVectorDinamico}{Vector\+Dinamico}$<$ T $>$\+::size (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Número de componentes del vector. 
+
+\begin{DoxyReturn}{Devuelve}
+Devuelve el número de componentes que puede almacenar en este instante el vector 
+\end{DoxyReturn}
+\begin{DoxySeeAlso}{Ver también}
+\hyperlink{classVectorDinamico_a9b3fd8907bc3ca9b5bc5775bbb11f867}{resize()} 
+\end{DoxySeeAlso}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+include/vector\+\_\+dinamico.\+h\item 
+include/vector\+\_\+dinamico.\+cpp\end{DoxyCompactItemize}

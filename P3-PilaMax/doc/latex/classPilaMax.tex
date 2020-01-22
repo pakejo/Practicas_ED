@@ -1,0 +1,175 @@
+\hypertarget{classPilaMax}{}\section{Referencia de la plantilla de la Clase Pila\+Max$<$ T $>$}
+\label{classPilaMax}\index{Pila\+Max$<$ T $>$@{Pila\+Max$<$ T $>$}}
+
+
+T.\+D.\+A. Pila\+\_\+\+Max.  
+
+
+
+
+{\ttfamily \#include $<$pila\+\_\+max.\+h$>$}
+
+\subsection*{Métodos públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPilaMax_a75df9c3622957f933f913b2f09d7bca3}\label{classPilaMax_a75df9c3622957f933f913b2f09d7bca3}} 
+\hyperlink{classPilaMax_a75df9c3622957f933f913b2f09d7bca3}{Pila\+Max} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPilaMax_a65d381f2d58fa40b744535aa61a95646}\label{classPilaMax_a65d381f2d58fa40b744535aa61a95646}} 
+\hyperlink{classPilaMax_a65d381f2d58fa40b744535aa61a95646}{Pila\+Max} (T val)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetros. \end{DoxyCompactList}\item 
+\hyperlink{classPilaMax_abbc833df3e55f3c4b8fc02fca156ca16}{Pila\+Max} (const \hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$ \&original)
+\begin{DoxyCompactList}\small\item\em Constructor de copia. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPilaMax_afbbe8f45bdb34b49047863b26bb86f60}\label{classPilaMax_afbbe8f45bdb34b49047863b26bb86f60}} 
+bool \hyperlink{classPilaMax_afbbe8f45bdb34b49047863b26bb86f60}{empty} ()
+\begin{DoxyCompactList}\small\item\em Comprueba si la pila está vacía. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPilaMax_a17d84be973a9df1e1ee51e87df045348}\label{classPilaMax_a17d84be973a9df1e1ee51e87df045348}} 
+int \hyperlink{classPilaMax_a17d84be973a9df1e1ee51e87df045348}{size} () const
+\begin{DoxyCompactList}\small\item\em Número de elementos de la pila. \end{DoxyCompactList}\item 
+Elemento \& \hyperlink{classPilaMax_a8ededbe2b2180656cdbaa0a0a437fb65}{top} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el tope de la pila. \end{DoxyCompactList}\item 
+const Elemento \& \hyperlink{classPilaMax_a73ea1d2e5b631b551613b2b3e2d884f3}{top} () const
+\begin{DoxyCompactList}\small\item\em Obtiene el tope de la pila constante. \end{DoxyCompactList}\item 
+void \hyperlink{classPilaMax_a8d444d7757bf2fd488d5ed8f34a942e0}{push} (T \&nuevo)
+\begin{DoxyCompactList}\small\item\em Añade un nuevo elemento al tope. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classPilaMax_ae85a974bede13446dd9e99608f848d83}\label{classPilaMax_ae85a974bede13446dd9e99608f848d83}} 
+void \hyperlink{classPilaMax_ae85a974bede13446dd9e99608f848d83}{pop} ()
+\begin{DoxyCompactList}\small\item\em Borra el tope de la pila. \end{DoxyCompactList}\item 
+void \hyperlink{classPilaMax_a9736ed6ed710fc403dc2d5590a0032ae}{swap} (\hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$ \&otro)
+\begin{DoxyCompactList}\small\item\em Intercambia el contenido de esta pila y la pasada como argumento. \end{DoxyCompactList}\item 
+\hyperlink{classPilaMax}{Pila\+Max} \& \hyperlink{classPilaMax_a4a2247953a5c68c37eb0f56440988e87}{operator=} (const \hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$ \&original)
+\begin{DoxyCompactList}\small\item\em Oprador de asignacioón. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Descripción detallada}
+\subsubsection*{template$<$class T$>$\newline
+class Pila\+Max$<$ T $>$}
+
+T.\+D.\+A. Pila\+\_\+\+Max. 
+
+Una instancia {\itshape c} del tipo de dato abstracto \hyperlink{classPilaMax}{Pila\+Max} sobre un dominio {\itshape T} es una sucesión finita de elementos del mismo con un funcionamiento {\itshape L\+I\+FO} (Last In, First Out\}). En una \hyperlink{classPilaMax}{Pila\+Max}, las operaciones de inserción tienen lugar en uno de los extremos, denominado {\itshape tope} de la pila, mientras que el borrado y consulta se lleva a cabo también en ese {\itshape tope}. Además, en este caso guardaremos junto a cada elemento el valor máximo de la pila hasta ese punto, denominado máximo Una pila de longitud {\itshape n} la denotamos
+
+
+\begin{DoxyItemize}
+\item $<$a1\+:\mbox{[}a1,m\mbox{]},a2\+:\mbox{[}a2,m\mbox{]},a3\+:\mbox{[}a3,m\mbox{]},..,an\+:\mbox{[}an,m\mbox{]}$<$
+\end{DoxyItemize}
+
+En esta pila, tendremos acceso únicamente al elemento del {\itshape tope}, es decir, a {\itshape a1}. El borrado o consulta de un elemento será sobre {\itshape a1}, la inserción de un nuevo elemento se hará antes de {\itshape a1} (principio de la pila).
+
+Si n=0 diremos que la pila está vacía.
+
+El espacio requerido para el almacenamiento es O(n), donde n es el número de elementos de la cola.
+
+\begin{DoxyAuthor}{Autor}
+Francisco Ruiz Adán 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Fecha}
+18/10/2019 
+\end{DoxyDate}
+
+
+\subsection{Documentación del constructor y destructor}
+\mbox{\Hypertarget{classPilaMax_abbc833df3e55f3c4b8fc02fca156ca16}\label{classPilaMax_abbc833df3e55f3c4b8fc02fca156ca16}} 
+\index{Pila\+Max@{Pila\+Max}!Pila\+Max@{Pila\+Max}}
+\index{Pila\+Max@{Pila\+Max}!Pila\+Max@{Pila\+Max}}
+\subsubsection{\texorpdfstring{Pila\+Max()}{PilaMax()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$\+::\hyperlink{classPilaMax}{Pila\+Max} (\begin{DoxyParamCaption}\item[{const \hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$ \&}]{original }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em original} & Pila de la que se hará la copia \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Documentación de las funciones miembro}
+\mbox{\Hypertarget{classPilaMax_a4a2247953a5c68c37eb0f56440988e87}\label{classPilaMax_a4a2247953a5c68c37eb0f56440988e87}} 
+\index{Pila\+Max@{Pila\+Max}!operator=@{operator=}}
+\index{operator=@{operator=}!Pila\+Max@{Pila\+Max}}
+\subsubsection{\texorpdfstring{operator=()}{operator=()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$ \& \hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$\+::operator= (\begin{DoxyParamCaption}\item[{const \hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$ \&}]{original }\end{DoxyParamCaption})}
+
+
+
+Oprador de asignacioón. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em original} & la pila que se va asignar \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPilaMax_a8d444d7757bf2fd488d5ed8f34a942e0}\label{classPilaMax_a8d444d7757bf2fd488d5ed8f34a942e0}} 
+\index{Pila\+Max@{Pila\+Max}!push@{push}}
+\index{push@{push}!Pila\+Max@{Pila\+Max}}
+\subsubsection{\texorpdfstring{push()}{push()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$\+::push (\begin{DoxyParamCaption}\item[{T \&}]{nuevo }\end{DoxyParamCaption})}
+
+
+
+Añade un nuevo elemento al tope. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em nuevo} & Valor a añdir en el tope \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPilaMax_a9736ed6ed710fc403dc2d5590a0032ae}\label{classPilaMax_a9736ed6ed710fc403dc2d5590a0032ae}} 
+\index{Pila\+Max@{Pila\+Max}!swap@{swap}}
+\index{swap@{swap}!Pila\+Max@{Pila\+Max}}
+\subsubsection{\texorpdfstring{swap()}{swap()}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+void \hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$\+::swap (\begin{DoxyParamCaption}\item[{\hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$ \&}]{otro }\end{DoxyParamCaption})}
+
+
+
+Intercambia el contenido de esta pila y la pasada como argumento. 
+
+
+\begin{DoxyParams}{Parámetros}
+{\em otro} & pila con la que intercambiar el contenido \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPostcond}{Postcondición}
+Ambas pilas quedan modiciadas 
+\end{DoxyPostcond}
+\mbox{\Hypertarget{classPilaMax_a8ededbe2b2180656cdbaa0a0a437fb65}\label{classPilaMax_a8ededbe2b2180656cdbaa0a0a437fb65}} 
+\index{Pila\+Max@{Pila\+Max}!top@{top}}
+\index{top@{top}!Pila\+Max@{Pila\+Max}}
+\subsubsection{\texorpdfstring{top()}{top()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+\hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$\+::Elemento \& \hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Obtiene el tope de la pila. 
+
+\begin{DoxyReturn}{Devuelve}
+Valor del tope 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPilaMax_a73ea1d2e5b631b551613b2b3e2d884f3}\label{classPilaMax_a73ea1d2e5b631b551613b2b3e2d884f3}} 
+\index{Pila\+Max@{Pila\+Max}!top@{top}}
+\index{top@{top}!Pila\+Max@{Pila\+Max}}
+\subsubsection{\texorpdfstring{top()}{top()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$class T $>$ \\
+const \hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$\+::Elemento \& \hyperlink{classPilaMax}{Pila\+Max}$<$ T $>$\+::top (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Obtiene el tope de la pila constante. 
+
+\begin{DoxyReturn}{Devuelve}
+Valor del tope 
+\end{DoxyReturn}
+
+
+La documentación para esta clase fue generada a partir de los siguientes ficheros\+:\begin{DoxyCompactItemize}
+\item 
+include/pila\+\_\+max.\+h\item 
+include/\hyperlink{pila__max_8hpp}{pila\+\_\+max.\+hpp}\end{DoxyCompactItemize}
